@@ -8,10 +8,10 @@ Solution:
 We are going to develop a web based solution that can help in connecting the children and managing them. It will also facilitate that PAL and mentoring is being used efficiently by taking feedbacks from Mentor time to time.
 
 Team:
-Peeush Harsh
-Sharad Chandra
-Dilnawaz Sayyad
-Pasupuleti Rohini
-Jeyakarthika R
+Peeush Harsh,
+Sharad Chandra,
+Dilnawaz Sayyad,
+Pasupuleti Rohini,
+Jeyakarthika R,
 Sandhya A
 
