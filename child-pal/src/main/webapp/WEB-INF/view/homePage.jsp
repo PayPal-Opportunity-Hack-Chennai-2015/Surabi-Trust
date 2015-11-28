@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html lang="en">
 
 <head>
@@ -281,29 +282,56 @@
 
 			<div class="row marginbot-80">
 				<div class="col-md-8 col-md-offset-2">
-						<form id="contact-form">
+						<form:form id="contact-form" method="POST" action="addPal" >
 						<div class="row marginbot-20">
 							<div class="col-md-6 xs-marginbot-20">
-								<input type="text" class="form-control input-lg" id="name" placeholder="Enter name" required="required" />
+								<form:input type="text" class="form-control input-lg" id="name" placeholder="Enter name" required="required" path="name"/>
 							</div>
 							<div class="col-md-6">
 								<input type="email" class="form-control input-lg" id="email" placeholder="Enter email" required="required" />
 							</div>
 						</div>
+						<div class="row marginbot-20">
+							<div class="col-md-6 xs-marginbot-20">
+								<form:select type="text" class="form-control input-lg" id="name" placeholder="Enter standard" required="required" path="standard" > 
+									<option value="First">First</option>
+									<option value="Second">Second</option>
+									<option value="Third">Third</option>
+									<option value="Fourth">Fourth</option>
+									<option value="Fifth">Fifth</option>
+									<option value="Sixth">Sixth</option>
+									<option value="Seventh">Seventh</option>
+									<option value="Eight">Eight</option>
+									<option value="Nineth">Nineth</option>
+									<option value="Tenth">Tenth</option>
+								</form:select>
+							</div>
+							<div class="col-md-6">
+								<form:select type="text" class="form-control input-lg" id="email" placeholder="Enter gender" required="required" path="gender" >
+								<option value="male">Male</option>
+									<option value="female">Female</option>
+								</form:select>
+							</div>
+						</div>
 						<div class="row">
 							<div class="col-md-12">
 								<div class="form-group">
-										<input type="text" class="form-control input-lg" id="subject" placeholder="Subject" required="required" />
+									<form:textarea name="message" id="message" style="height: 50px" class="form-control" rows="4" cols="25" required="required"
+										placeholder="likingSubject" path="likingSubject" ></form:textarea>
 								</div>
 								<div class="form-group">
-									<textarea name="message" id="message" class="form-control" rows="4" cols="25" required="required"
-										placeholder="Message"></textarea>
+									<form:textarea name="message" style="height: 50px" id="message" class="form-control" rows="4" cols="25" required="required"
+										placeholder="likingSport" path="likingSport"></form:textarea>
+								</div>
+								<div class="form-group">
+									<form:textarea name="message" id="message" style="height: 50px"  class="form-control" rows="4" cols="25" required="required"
+										placeholder="otherInterest" path="otherInterest"></form:textarea>
 								</div>						
 								<button type="submit" class="btn btn-skin btn-lg btn-block" id="btnContactUs">
 									Send Message</button>
 							</div>
 						</div>
-						</form>
+						</form:form>
 				</div>
 			</div>	
 
