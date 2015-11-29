@@ -37,8 +37,9 @@ public class Config extends WebMvcConfigurerAdapter {
 	
 	@Bean
     public  MongoDbFactory mongoDbFactory() throws Exception {
-    	MongoClient mongoClient = new MongoClient("192.168.120.105",27017);
-    	UserCredentials userCredentials = new UserCredentials("","");
+    	//MongoClient mongoClient = new MongoClient("192.168.120.105",27017);
+		MongoClient mongoClient = new MongoClient("localhost",27017);
+		UserCredentials userCredentials = new UserCredentials("","");
         return new SimpleMongoDbFactory(mongoClient, "surabi", userCredentials);
     }
 	
