@@ -33,8 +33,8 @@
               <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center inner">
 					<div class="animatedParent">
-						<h1 class="animated fadeInDown">MUSIM BOCOR</h1>
-						<p class="animated fadeInUp">Udah dari dulu tahu kalo bocor kenapa nggak ditambal tong</p>
+						<h1 class="animated fadeInDown">BALAVIKAS</h1>
+						<p class="animated fadeInUp">Share Your Knowledge. It's a way to achieve immortality</p>
 					</div>
 			   </div>
               </div>
@@ -54,7 +54,7 @@
                                     <div class="row">
                                           <div class="col-md-2">
                                                    <div class="site-logo">
-                                                            <a href="index.html" class="brand">Bocor</a>
+                                                            <a href="index.html" class="brand">Surabi</a>
                                                     </div>
                                           </div>
                                           
@@ -95,7 +95,7 @@
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="animatedParent">
 					<div class="section-heading text-center animated bounceInDown">
-					<h2 class="h-bold">About our bocor team</h2>
+					<h2 class="h-bold">About our Surabi team</h2>
 					<div class="divider-header"></div>
 					</div>
 					</div>
@@ -351,7 +351,7 @@
 					</ul>
 				</div>
 				<div class="col-md-6 text-right">
-					<p>&copy;Copyright 2014 - Bocor. Designed by <a href="http://bootstraptaste.com">Bootstrap Themes</a></p>
+					<p>&copy;Copyright 2015 - Surabi. Designed by Surabi Team</a></p>
                     <!-- 
                         All links in the footer should remain intact. 
                         Licenseing information is available at: http://bootstraptaste.com/license/
