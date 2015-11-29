@@ -94,7 +94,7 @@
 					</ul>
 				</div>
 				<div class="col-md-6 text-right">
-					<p>&copy;Copyright 2014 - Bocor. Designed by <a href="http://bootstraptaste.com">Bootstrap Themes</a></p>
+					<p>&copy;Copyright 2015 - Surabi. Designed by Surabi Team</p>
                     <!-- 
                         All links in the footer should remain intact. 
                         Licenseing information is available at: http://bootstraptaste.com/license/
