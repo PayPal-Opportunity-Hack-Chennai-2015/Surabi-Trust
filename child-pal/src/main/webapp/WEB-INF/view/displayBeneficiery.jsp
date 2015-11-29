@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@page import="com.surabhi.domain.PalUI"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="com.surabhi.domain.Pal"%>
 <%@page import="java.util.List"%>
@@ -11,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bocor bootstrap 3 one page template</title>
+    <title>Surabi Trust</title>
 	
     <!-- css -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -51,7 +52,7 @@
    
         <div class="row animatedParent">
         <%
-   List<Pal> benefeciaries =(ArrayList<Pal>) request.getAttribute("benefeciaries");
+   List<PalUI> benefeciaries =(ArrayList<PalUI>) request.getAttribute("benefeciaries");
 							for (int i = 0; i < benefeciaries.size(); i++) {
 								
 %>
@@ -59,15 +60,15 @@
 				<div class="animated rotateInDownLeft">
                 <div class="service-box">
 					<div class="service-icon">
-						<span class="fa fa-camera fa-2x"></span> 
+						<span class="fa fa-2x" style="font-weight: bold;font-size: 40px">#<%=i+1%></span> 
 					</div>
 					<div class="service-desc">						
 						<h5><%=benefeciaries.get(i).getName()%></h5>
 						<div class="divider-header"></div>
 						<p>
-						Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
+						<span style="font-weight:bold;">Interested in </span><%=benefeciaries.get(i).getLikingSubject()%><%=benefeciaries.get(i).getLikingSport()%><%=benefeciaries.get(i).getOtherInterest()%>
 						</p>
-						<a href="javascript:submit('<%=i%>');" class="btn btn-skin">Learn more</a>
+						<a href="javascript:submit('<%=i%>');" class="btn btn-skin">Select</a>
 					</div>
                 </div>
 				</div>

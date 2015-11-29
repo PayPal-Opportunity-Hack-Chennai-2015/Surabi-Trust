@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.stereotype.Component;
 
 @Component
-@Document(collection = "Beneficiary")
+@Document(collection = "Pal")
 public class Pal extends AbstractDBRecord {
 	private String name;
 	private String standard;
