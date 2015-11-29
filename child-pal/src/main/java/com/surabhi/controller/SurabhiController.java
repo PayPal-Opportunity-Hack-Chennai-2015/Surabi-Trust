@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.surabhi.domain.Beneficiary;
+import com.surabhi.domain.MyPair;
 import com.surabhi.domain.Pal;
 import com.surabhi.domain.PalUI;
 import com.surabhi.service.ExactMatchGenerator;
@@ -38,19 +39,43 @@ public class SurabhiController {
 		Iterator<Beneficiary> itr = exactMatch.iterator();
 		List<PalUI> benefeciaries=new ArrayList<>();
 	    while(itr.hasNext()){
-	    	/*PalUI pal1 =new PalUI();
-	    	pal1.setName();
-	    	pal1.setOtherInterest("gghg");
-	    	benefeciaries.add(pal1);
-	    	itr.next();*/
+	    	Beneficiary beneficiary=itr.next();
+	    	PalUI palUI  = new PalUI();
+	    	palUI.setName(beneficiary.getName());
+	    	palUI.setGender(beneficiary.getSex());
+	    	if(null!=beneficiary.getInterest())
+	    	{
+	    	String interest = "";
+	    	for(MyPair pair:beneficiary.getInterest())
+	    	{
+	    		interest = interest + pair.getName();
+	    	}
+	    	palUI.setOtherInterest(interest);
+	    	}
+	    	
+	    	if(null!=beneficiary.getSports())
+	    	{
+	    	String sport = "";
+	    	for(MyPair pair:beneficiary.getSports())
+	    	{
+	    		sport = sport + pair.getName();
+	    	}
+	    	palUI.setLikingSport(sport);
+	    	}
+	    	
+	    	if(null!=beneficiary.getSubject())
+	    	{
+	    	String studies = "";
+	    	for(MyPair pair:beneficiary.getSubject())
+	    	{
+	    		studies = studies + pair.getName();
+	    	}
+	    	palUI.setOtherInterest(studies);
+	    	}
+	    	palUI.setStandard(beneficiary.getMedium());
+	    	
 	    }
 	    
-		/*System.out.println("username: " + pal.getName());
-		System.out.println("standard: " + pal.getStandard());
-		System.out.println("gender: " + pal.getGender());
-		System.out.println("subject: " + pal.getLikingSubject());
-		System.out.println("sport: " + pal.getLikingSport());
-		System.out.println("other interest: " + pal.getOtherInterest());*/
 	    model.addAttribute("benefeciaries",benefeciaries);
 		return new ModelAndView("displayBeneficiery");
 	}

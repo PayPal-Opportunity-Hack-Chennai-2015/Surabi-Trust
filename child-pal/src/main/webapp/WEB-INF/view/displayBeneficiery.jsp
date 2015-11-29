@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@page import="com.surabhi.domain.PalUI"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="com.surabhi.domain.Pal"%>
 <%@page import="java.util.List"%>
@@ -51,7 +52,7 @@
    
         <div class="row animatedParent">
         <%
-   List<Pal> benefeciaries =(ArrayList<Pal>) request.getAttribute("benefeciaries");
+   List<PalUI> benefeciaries =(ArrayList<PalUI>) request.getAttribute("benefeciaries");
 							for (int i = 0; i < benefeciaries.size(); i++) {
 								
 %>
