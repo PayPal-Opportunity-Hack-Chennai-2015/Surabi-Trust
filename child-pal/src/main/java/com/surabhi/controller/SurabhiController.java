@@ -73,7 +73,7 @@ public class SurabhiController {
 	    	palUI.setOtherInterest(studies);
 	    	}
 	    	palUI.setStandard(beneficiary.getMedium());
-	    	
+	    	benefeciaries.add(palUI);
 	    }
 	    
 	    model.addAttribute("benefeciaries",benefeciaries);
