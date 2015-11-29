@@ -25,18 +25,15 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-
-	
-
-
-	<!-- Section: services -->
-    <section id="service" class="home-section color-dark bg-gray">
+ 
+	<!-- Section: about -->
+    <section id="about" class="home-section color-dark bg-white">
 		<div class="container marginbot-50">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-					<div>
-					<div class="section-heading text-center">
-					<h2 class="h-bold">What we can do for you</h2>
+					<div class="animatedParent">
+					<div class="section-heading text-center animated bounceInDown">
+					<h2 class="h-bold">About our Surabi team</h2>
 					<div class="divider-header"></div>
 					</div>
 					</div>
@@ -45,43 +42,31 @@
 
 		</div>
 
-		<div class="text-center">
 		<div class="container">
-	
-   
-        <div class="row animatedParent">
-        <%
-   List<Pal> benefeciaries =(ArrayList<Pal>) request.getAttribute("benefeciaries");
-							for (int i = 0; i < benefeciaries.size(); i++) {
-								
-%>
-            <div class="col-xs-6 col-sm-4 col-md-4">
-				<div class="animated rotateInDownLeft">
-                <div class="service-box">
-					<div class="service-icon">
-						<span class="fa fa-camera fa-2x"></span> 
-					</div>
-					<div class="service-desc">						
-						<h5><%=benefeciaries.get(i).getName()%></h5>
-						<div class="divider-header"></div>
-						<p>
-						Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
-						</p>
-						<a href="javascript:submit('<%=i%>');" class="btn btn-skin">Learn more</a>
-					</div>
-                </div>
+
+		
+        <div class="row">
+		
+		
+            <div class="col-lg-8 col-lg-offset-2 animatedParent">		
+				<div class="text-center">
+					<p>
+					Lorem ipsum dolor sit amet, vis tale malis tacimates et, graece doctus omnesque ne est, deserunt pertinacia ne nam. Pro eu simul affert referrentur, natum mutat erroribus te his
+					</p>
+					<p>
+					Ne mundi fabulas corrumpit vim, nulla vivendum conceptam eu nam. Ius ex principes complectitur, ex quo duis suscipit. Ius fastidii reprimique no. Sadipscing appellantur pri ad. Oratio moderatius definitiones cum ex, mea ne brute vivendum percipitur. 
+					</p>
+					<a href="#service" class="btn btn-skin btn-scroll">What we do</a>
 				</div>
             </div>
-			
-<%} %>
+		
+
         </div>		
 		</div>
-		</div>
+
 	</section>
-	<!-- /Section: services -->
-	<form id="chooseBeneficiaryForm" method="POST" action="connectBeneficiary" >
-	<input type="hidden"  id="beneficiaryIndex" value="" name="beneficiaryIndex"/>
-	</form>
+	<!-- /Section: about -->
+
 
 	
 	<footer>
@@ -117,12 +102,7 @@
 	
     <script src="resources/js/custom.js"></script>
 	<script src="resources/js/css3-animate-it.js"></script>
-<script type="text/javascript">
-function submit(param){
-	document.getElementById("beneficiaryIndex").value = param;
-	document.getElementById("chooseBeneficiaryForm").submit();
-}
-</script>
+
 </body>
 
 </html>
