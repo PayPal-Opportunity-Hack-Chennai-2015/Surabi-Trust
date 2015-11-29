@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<%@page import="java.util.ArrayList"%>
+<%@page import="com.surabhi.domain.Pal"%>
+<%@page import="java.util.List"%>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html lang="en">
 
@@ -24,10 +27,8 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
 	
-	
-   
-	
-	
+
+
 	<!-- Section: services -->
     <section id="service" class="home-section color-dark bg-gray">
 		<div class="container marginbot-50">
@@ -46,66 +47,41 @@
 
 		<div class="text-center">
 		<div class="container">
-
+	
+   
         <div class="row animatedParent">
+        <%
+   List<Pal> benefeciaries =(ArrayList<Pal>) request.getAttribute("benefeciaries");
+							for (int i = 0; i < benefeciaries.size(); i++) {
+								
+%>
             <div class="col-xs-6 col-sm-4 col-md-4">
 				<div class="animated rotateInDownLeft">
                 <div class="service-box">
 					<div class="service-icon">
-						<span class="fa fa-laptop fa-2x"></span> 
-					</div>
-					<div class="service-desc">						
-						<h5>Web Design</h5>
-						<div class="divider-header"></div>
-						<p>
-						Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
-						</p>
-						<a href="#" class="btn btn-skin">Learn more</a>
-					</div>
-                </div>
-				</div>
-            </div>
-			<div class="col-xs-6 col-sm-4 col-md-4">
-				<div class="animated rotateInDownLeft slow">
-                <div class="service-box">
-					<div class="service-icon">
 						<span class="fa fa-camera fa-2x"></span> 
 					</div>
-					<div class="service-desc">
-						<h5>Photography</h5>
+					<div class="service-desc">						
+						<h5><%=benefeciaries.get(i).getName()%></h5>
 						<div class="divider-header"></div>
 						<p>
 						Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
 						</p>
-						<a href="#" class="btn btn-skin">Learn more</a>
+						<a href="javascript:submit('<%=i%>');" class="btn btn-skin">Learn more</a>
 					</div>
                 </div>
 				</div>
             </div>
-			<div class="col-xs-6 col-sm-4 col-md-4">
-				<div class="animated rotateInDownLeft slower">
-                <div class="service-box">
-					<div class="service-icon">
-						<span class="fa fa-code fa-2x"></span> 
-					</div>
-					<div class="service-desc">
-						<h5>Graphic design</h5>
-						<div class="divider-header"></div>
-						<p>
-						Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
-						</p>
-						<a href="#" class="btn btn-skin">Learn more</a>
-					</div>
-                </div>
-				</div>
-            </div>
-
+			
+<%} %>
         </div>		
 		</div>
 		</div>
 	</section>
 	<!-- /Section: services -->
-	
+	<form id="chooseBeneficiaryForm" method="POST" action="connectBeneficiary" >
+	<input type="hidden"  id="beneficiaryIndex" value="" name="beneficiaryIndex"/>
+	</form>
 
 	
 	<footer>
@@ -141,7 +117,12 @@
 	
     <script src="resources/js/custom.js"></script>
 	<script src="resources/js/css3-animate-it.js"></script>
-
+<script type="text/javascript">
+function submit(param){
+	document.getElementById("beneficiaryIndex").value = param;
+	document.getElementById("chooseBeneficiaryForm").submit();
+}
+</script>
 </body>
 
 </html>
