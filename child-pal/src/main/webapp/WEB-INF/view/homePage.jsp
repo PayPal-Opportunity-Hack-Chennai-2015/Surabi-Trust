@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bocor bootstrap 3 one page template</title>
+    <title>Surabi Trust</title>
 	
     <!-- css -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -34,7 +34,7 @@
                 <div class="col-md-8 col-md-offset-2 text-center inner">
 					<div class="animatedParent">
 						<h1 class="animated fadeInDown">BALAVIKAS</h1>
-						<p class="animated fadeInUp">Share Your Knowledge. It's a way to achieve immortality</p>
+						<p class="animated fadeInUp">Transform livelihood- creating opportunities.</p>
 					</div>
 			   </div>
               </div>
@@ -72,10 +72,9 @@
                                                             <ul class="nav navbar-nav navbar-right">
                                                                   <li class="active"><a href="#intro">Home</a></li>
                                                                   <li><a href="#about">About Us</a></li>
-																   <li><a href="#service">Services</a></li>
-                                                                  <li><a href="#works">Works</a></li>				                                                                  
+																  	                                                                  
                                                                   
-                                                                  <li><a href="#contact">Contact</a></li>
+                                                                  <li><a href="#contact">Become A Mentor</a></li>
                                                             </ul>
                                                       </div>
                                                       <!-- /.Navbar-collapse -->
@@ -95,7 +94,7 @@
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="animatedParent">
 					<div class="section-heading text-center animated bounceInDown">
-					<h2 class="h-bold">About our Surabi team</h2>
+					<h2 class="h-bold">About our Surabi Trust</h2>
 					<div class="divider-header"></div>
 					</div>
 					</div>
@@ -113,12 +112,12 @@
             <div class="col-lg-8 col-lg-offset-2 animatedParent">		
 				<div class="text-center">
 					<p>
-					Lorem ipsum dolor sit amet, vis tale malis tacimates et, graece doctus omnesque ne est, deserunt pertinacia ne nam. Pro eu simul affert referrentur, natum mutat erroribus te his
+					Surabi Trust is a registered charitableTrust found by a group of socially committed youth in the year 2008 and is based in Chennai, Tamilnadu (Reg.No517/08). The Trust is established with the ultimate aim to serve the society. We initiated our efforts to serve children in distress and empower women to be self-reliant.
 					</p>
 					<p>
-					Ne mundi fabulas corrumpit vim, nulla vivendum conceptam eu nam. Ius ex principes complectitur, ex quo duis suscipit. Ius fastidii reprimique no. Sadipscing appellantur pri ad. Oratio moderatius definitiones cum ex, mea ne brute vivendum percipitur. 
+					We Thank many individuals and organisation donors, who have believed in rejuvenating the culture of giving support the destitute children and other underprivileged segment of the communities towards their integrated development. Your contribution makes significant difference in the lives of these deprived children and the society in distress. 
 					</p>
-					<a href="#service" class="btn btn-skin btn-scroll">What we do</a>
+					<a href="#contact" class="btn btn-skin btn-scroll">Become A Mentor</a>
 				</div>
             </div>
 		
@@ -130,138 +129,7 @@
 	<!-- /Section: about -->
 	
 	
-	<!-- Section: services -->
-    <section id="service" class="home-section color-dark bg-gray">
-		<div class="container marginbot-50">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<div>
-					<div class="section-heading text-center">
-					<h2 class="h-bold">What we can do for you</h2>
-					<div class="divider-header"></div>
-					</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="text-center">
-		<div class="container">
-
-        <div class="row animatedParent">
-            <div class="col-xs-6 col-sm-4 col-md-4">
-				<div class="animated rotateInDownLeft">
-                <div class="service-box">
-					<div class="service-icon">
-						<span class="fa fa-laptop fa-2x"></span> 
-					</div>
-					<div class="service-desc">						
-						<h5>Web Design</h5>
-						<div class="divider-header"></div>
-						<p>
-						Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
-						</p>
-						<a href="#" class="btn btn-skin">Learn more</a>
-					</div>
-                </div>
-				</div>
-            </div>
-			<div class="col-xs-6 col-sm-4 col-md-4">
-				<div class="animated rotateInDownLeft slow">
-                <div class="service-box">
-					<div class="service-icon">
-						<span class="fa fa-camera fa-2x"></span> 
-					</div>
-					<div class="service-desc">
-						<h5>Photography</h5>
-						<div class="divider-header"></div>
-						<p>
-						Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
-						</p>
-						<a href="#" class="btn btn-skin">Learn more</a>
-					</div>
-                </div>
-				</div>
-            </div>
-			<div class="col-xs-6 col-sm-4 col-md-4">
-				<div class="animated rotateInDownLeft slower">
-                <div class="service-box">
-					<div class="service-icon">
-						<span class="fa fa-code fa-2x"></span> 
-					</div>
-					<div class="service-desc">
-						<h5>Graphic design</h5>
-						<div class="divider-header"></div>
-						<p>
-						Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
-						</p>
-						<a href="#" class="btn btn-skin">Learn more</a>
-					</div>
-                </div>
-				</div>
-            </div>
-
-        </div>		
-		</div>
-		</div>
-	</section>
-	<!-- /Section: services -->
 	
-
-	<!-- Section: works -->
-    <section id="works" class="home-section color-dark text-center bg-white">
-		<div class="container marginbot-50">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<div>
-					<div class="animatedParent">
-					<div class="section-heading text-center">
-					<h2 class="h-bold animated bounceInDown">What we have done</h2>
-					<div class="divider-header"></div>
-					</div>
-					</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="container">
-
-            <div class="row animatedParent">
-                <div class="col-sm-12 col-md-12 col-lg-12" >
-
-                    <div class="row gallery-item">
-                        <div class="col-md-3 animated fadeInUp">
-							<a href="resources/img/works/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="resources/img/works/1@2x.jpg">
-								<img src="resources/img/works/1.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3 animated fadeInUp slow">
-							<a href="resources/img/works/2.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="resources/img/works/1@2x.jpg">
-								<img src="resources/img/works/2.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3 animated fadeInUp slower">
-							<a href="resources/img/works/3.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="resources/img/works/1@2x.jpg">
-								<img src="resources/img/works/3.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3 animated fadeInUp">
-							<a href="resources/img/works/4.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="resources/img/works/1@2x.jpg">
-								<img src="resources/img/works/4.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-					</div>
-	
-                </div>
-            </div>	
-		</div>
-
-	</section>
-	<!-- /Section: works -->
-
 	<!-- Section: contact -->
     <section id="contact" class="home-section nopadd-bot color-dark bg-gray text-center">
 		<div class="container marginbot-50">
@@ -269,7 +137,7 @@
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="animatedParent">
 					<div class="section-heading text-center">
-					<h2 class="h-bold animated bounceInDown">Get in touch with us</h2>
+					<h2 class="h-bold animated bounceInDown">Register As A Mentor</h2>
 					<div class="divider-header"></div>
 					</div>
 					</div>
@@ -328,7 +196,7 @@
 										placeholder="otherInterest" path="otherInterest"></form:textarea>
 								</div>						
 								<button type="submit" class="btn btn-skin btn-lg btn-block" id="btnContactUs">
-									Send Message</button>
+									Become Mentor</button>
 							</div>
 						</div>
 						</form:form>
