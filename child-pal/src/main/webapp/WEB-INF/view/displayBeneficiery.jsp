@@ -66,7 +66,7 @@
 						<h5><%=benefeciaries.get(i).getName()%></h5>
 						<div class="divider-header"></div>
 						<p>
-						<span style="font-weight:bold;">Interested in </span><%=benefeciaries.get(i).getOtherInterest()%>
+						<span style="font-weight:bold;">Interested in </span><%=benefeciaries.get(i).getLikingSubject()%><%=benefeciaries.get(i).getLikingSport()%><%=benefeciaries.get(i).getOtherInterest()%>
 						</p>
 						<a href="javascript:submit('<%=i%>');" class="btn btn-skin">Select</a>
 					</div>

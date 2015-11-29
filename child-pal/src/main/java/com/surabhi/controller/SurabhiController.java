@@ -51,6 +51,7 @@ public class SurabhiController {
 	    	{
 	    		interest = interest + pair.getName()+",";
 	    	}
+	    	interest.substring(0, interest.length()-2);
 	    	palUI.setOtherInterest(interest);
 	    	}
 	    	
@@ -59,7 +60,7 @@ public class SurabhiController {
 	    	String sport = "";
 	    	for(MyPair pair:beneficiary.getSports())
 	    	{
-	    		sport = sport + pair.getName();
+	    		sport = sport + pair.getName()+",";
 	    	}
 	    	palUI.setLikingSport(sport);
 	    	}
@@ -69,9 +70,9 @@ public class SurabhiController {
 	    	String studies = "";
 	    	for(MyPair pair:beneficiary.getSubject())
 	    	{
-	    		studies = studies + pair.getName();
+	    		studies = studies + pair.getName()+",";
 	    	}
-	    	palUI.setOtherInterest(studies);
+	    	palUI.setLikingSubject(studies);
 	    	}
 	    	palUI.setStandard(beneficiary.getMedium());
 	    	benefeciaries.add(palUI);
