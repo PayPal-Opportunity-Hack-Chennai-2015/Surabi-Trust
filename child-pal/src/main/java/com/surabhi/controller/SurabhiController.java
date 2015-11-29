@@ -11,6 +11,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.surabhi.domain.Beneficiary;
@@ -37,7 +38,7 @@ public class SurabhiController {
 		Pal pal=mapUIModeltoDomainModel(palModel,sports,subjects,interests);
 		Queue<Beneficiary> exactMatch = exactMatchGenerator.generateExactmatch(pal);
 		Iterator<Beneficiary> itr = exactMatch.iterator();
-		List<PalUI> benefeciaries=new ArrayList<>();
+		List<PalUI> benefeciaries=new ArrayList<PalUI>();
 	    while(itr.hasNext()){
 	    	Beneficiary beneficiary=itr.next();
 	    	PalUI palUI  = new PalUI();
@@ -48,7 +49,7 @@ public class SurabhiController {
 	    	String interest = "";
 	    	for(MyPair pair:beneficiary.getInterest())
 	    	{
-	    		interest = interest + pair.getName();
+	    		interest = interest + pair.getName()+",";
 	    	}
 	    	palUI.setOtherInterest(interest);
 	    	}
@@ -77,7 +78,12 @@ public class SurabhiController {
 	    }
 	    
 	    model.addAttribute("benefeciaries",benefeciaries);
-		return new ModelAndView("displayBeneficiery");
+	    if(benefeciaries.size()>0){
+	    	return new ModelAndView("displayBeneficiery");
+	    }else{
+	    	return new ModelAndView("ThankYou");
+	    }
+
 	}
 
 	private Pal mapUIModeltoDomainModel(PalUI palModel, String[] sports, String[] subjects, String[] interests) {
@@ -90,6 +96,12 @@ public class SurabhiController {
 		pal.setOtherInterest(interests);
 		return pal;
 		
+	}
+	@RequestMapping(value = "/connectBeneficiary", method = RequestMethod.POST)
+	public ModelAndView connectBeneficiary(
+			@RequestParam String beneficiaryIndex, ModelMap model) {
+		System.out.println("beneficiaryIndex: " + beneficiaryIndex);
+		return new ModelAndView("ThankYou");
 	}
 	
 	/*

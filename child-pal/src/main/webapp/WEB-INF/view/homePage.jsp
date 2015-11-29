@@ -162,22 +162,22 @@
 						<div class="row marginbot-20">
 							<div class="col-md-6 xs-marginbot-20">
 								<form:select type="text" class="form-control input-lg" id="name" placeholder="Enter standard" required="required" path="standard" > 
-									<option value="First">First</option>
-									<option value="Second">Second</option>
-									<option value="Third">Third</option>
-									<option value="Fourth">Fourth</option>
-									<option value="Fifth">Fifth</option>
-									<option value="Sixth">Sixth</option>
-									<option value="Seventh">Seventh</option>
-									<option value="Eight">Eight</option>
-									<option value="Nineth">Nineth</option>
-									<option value="Tenth">Tenth</option>
+									<option value="1">First</option>
+									<option value="2">Second</option>
+									<option value="3">Third</option>
+									<option value="4">Fourth</option>
+									<option value="5">Fifth</option>
+									<option value="6">Sixth</option>
+									<option value="7">Seventh</option>
+									<option value="8">Eight</option>
+									<option value="9">Nineth</option>
+									<option value="10">Tenth</option>
 								</form:select>
 							</div>
 							<div class="col-md-6">
 								<form:select type="text" class="form-control input-lg" id="email" placeholder="Enter gender" required="required" path="gender" >
-								<option value="male">Male</option>
-									<option value="female">Female</option>
+								<option value="M">Male</option>
+									<option value="F">Female</option>
 								</form:select>
 							</div>
 						</div>

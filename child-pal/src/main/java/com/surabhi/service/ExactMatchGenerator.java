@@ -22,14 +22,15 @@ public class ExactMatchGenerator {
 
 	@Autowired
 	MongoDBPersistanceService mongoDBPersistanceService;
-	Queue<Beneficiary> benPriorityQueue = new PriorityQueue<>(4);
+	Queue<Beneficiary> benPriorityQueue = new PriorityQueue<Beneficiary>(4);
 	Pal pal;
 
 	public Queue<Beneficiary> generateExactmatch(Pal pal) {
 		this.pal = pal;
 		mongoDBPersistanceService.update(pal);
 		List<Beneficiary> beneficiaryList = mongoDBPersistanceService
-				.findAllMatchingBeneficiaryRecords();
+				.findAllMatchingBeneficiaryRecords(pal.getGender(), pal.getStandard());
+		if (!beneficiaryList.isEmpty()) {
 		for (Beneficiary beneficiary : beneficiaryList) {
 			findMatch(beneficiary);
 		}
@@ -37,6 +38,7 @@ public class ExactMatchGenerator {
 		while(iter.hasNext())
 		{
 		System.out.println(iter.next().getScore());
+		}
 		}
 		return benPriorityQueue;
 	}

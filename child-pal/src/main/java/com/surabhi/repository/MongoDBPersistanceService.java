@@ -20,8 +20,10 @@ public class MongoDBPersistanceService {
 	@Autowired
     protected MongoTemplate mongoTemplate;
 	
-	public List<Beneficiary> findAllMatchingBeneficiaryRecords() {
-        Query query = new Query(Criteria.where("fathername").is("father"));
+	public List<Beneficiary> findAllMatchingBeneficiaryRecords(String gender, String standard) {
+        Query query = new Query(Criteria.where("sex").is(gender).andOperator(Criteria.where("standard").is(Integer.parseInt(standard))));
+      //  Query query = new Query();
+    //    query.addCriteria(new Criteria().andOperator(Criteria.where("sex").is(gender), Criteria.where("standard").is(standard)));
         return Collections.unmodifiableList(mongoTemplate.find(query, Beneficiary.class, "Beneficiary"));
     }
 	
