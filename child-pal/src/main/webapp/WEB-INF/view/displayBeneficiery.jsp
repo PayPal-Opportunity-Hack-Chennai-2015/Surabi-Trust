@@ -66,9 +66,9 @@
 						<h5><%=benefeciaries.get(i).getName()%></h5>
 						<div class="divider-header"></div>
 						<p>
-						Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
+						<span style="font-weight:bold;">Interested in </span><%=benefeciaries.get(i).getOtherInterest()%>
 						</p>
-						<a href="javascript:submit('<%=i%>');" class="btn btn-skin">Learn more</a>
+						<a href="javascript:submit('<%=i%>');" class="btn btn-skin">Select</a>
 					</div>
                 </div>
 				</div>
