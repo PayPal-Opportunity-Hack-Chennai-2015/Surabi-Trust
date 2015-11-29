@@ -47,11 +47,11 @@
                                                       <!-- Collect the nav links, forms, and other content for toggling -->
                                                       <div class="collapse navbar-collapse" id="menu">
                                                             <ul class="nav navbar-nav navbar-right">
-                                                                  <li class="active"><a href="#intro">Home</a></li>
-                                                                  <li><a href="#about">About Us</a></li>
+                                                                  <li class="active"><a href="home">Home</a></li>
+                                                                  <li><a href="home">About Us</a></li>
 																  	                                                                  
                                                                   
-                                                                  <li><a href="#contact">Become A Mentor</a></li>
+                                                                  <li><a href="home">Become A Mentor</a></li>
                                                             </ul>
                                                       </div>
                                                       <!-- /.Navbar-collapse -->
