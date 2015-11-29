@@ -60,7 +60,7 @@
 				<div class="animated rotateInDownLeft">
                 <div class="service-box">
 					<div class="service-icon">
-						<span class="fa fa-camera fa-2x"></span> 
+						<span class="fa fa-2x" style="font-weight: bold;font-size: 40px">#<%=i+1%></span> 
 					</div>
 					<div class="service-desc">						
 						<h5><%=benefeciaries.get(i).getName()%></h5>
